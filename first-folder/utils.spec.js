@@ -31,7 +31,7 @@ test('greeting - should return Hello Hedaia', () => {
 })
 
 // ========================================
-// Testing Truthnes
+// Testing Truthnes(Boolean)
 
 test('isEven - shoulde return true for 4', () => {
     result = isEven(4);
@@ -39,14 +39,28 @@ test('isEven - shoulde return true for 4', () => {
     expect(isEven(5)).toBeFalsy();
 })
 
+// ========== if the value exist or not
+
+test('validation', ()=>{
+
+    let x;
+    let y=null;
+
+    // expect(x).toBeDefined()
+    expect(x).not.toBeDefined()
+    expect(x).toBeUndefined()
+    expect(y).toBeNull()
+
+
+
+}
+)
 // ========================================
 // Testing Arrays
 
 test('Animals - shoulde return true for cat', () => {
 
     expect(Animals).toContain('cat');
-
-
 })
 
 // ================================
