@@ -11,8 +11,9 @@ test('summ- should return 2+3 = 5', () => {
     // expect(summ(2.4,1.02)).toBe(6);
 
     expect(summ(2.4, 1.02)).not.toBe(6);
-    // expect(summ(2.4,1.02)).toBeGreaterThanOrEqual(6);
-    expect(summ(2.4, 1.02)).toBeLessThanOrEqual(6);
+    expect(summ(2.4,1.02)).toBeGreaterThan(3);
+    expect(summ(2.4,1.02)).toBeGreaterThanOrEqual(3.42);
+    // expect(summ(2.4, 1.02)).toBeLessThanOrEqual(6);
     expect(summ(0.102, 0.3)).toBeCloseTo(0.4);
 
 
@@ -23,7 +24,7 @@ test('greeting - should return Hello Hedaia', () => {
 
     const result = greeting('Hedaia');
 
-    expect(result).toBe('Hello Hedaia')
+    // expect(result).toBe('Hello Hedaia')
     // Regular Expression
     expect(result).toMatch('Hello Hedaia')
 
