@@ -27,7 +27,14 @@ describe('getOrderByIdWithError', ()=>{
         // expect(result).toThrow()
 
         expect(()=>getOrderByIdWithError()).toThrow();
-        
+
+
+    })
+    
+    it('error 2', ()=>{
+
+        expect(()=>getOrderByIdWithError()).toThrow('id is not defined');
+
 
     })
 })
